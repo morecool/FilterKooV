@@ -1,0 +1,91 @@
+{
+    "type": "UISwitcherPanel", "name": "UISwitcher",
+    "fields": {
+        // The in-game panels are all 0 priority or higher, so this keeps the overlay underneath them.
+        "priority": -1,
+        "panels": [ "party", "quest_log", "character", "inventory", "skills_tree", "hireling_inventory", "pause" ],
+        "interruptablePanels": [ "stash", "horadric_cube", "vendor", "imbue", "trade", "waypoints", "scroll_of_inifuss" ],
+        "rememberLastPanel": false,
+        "fitToParent": true,
+    },
+    "children": [
+        {
+            "type": "Widget", "name": "Anchor",
+            "fields": {
+                "anchor": { "x": 0.5, "y": 0.0 },
+                "rect": "$UISwitcherRect",
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "CycleLeftIndicator",
+                    "fields": {
+                        "rect": { "x":-8, "y": 42 },
+                        "text": "\uE027",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "CycleRightIndicator",
+                    "fields": {
+                        "rect": { "x": 2793, "y": 42 },
+                        "text": "\uE028",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "AgeDescriptorImage",
+            "fields": {
+                "rect": { "x": 22, "y": 259 },
+                "filename": "PauseMenu\\descriptor-18",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "ViolenceDescriptorImage",
+            "fields": {
+                "rect": { "x": 22, "y": 515 },
+                "filename": "PauseMenu\\descriptor-violence",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "C_image_01",
+            "fields": {
+                "rect": { "x": 22, "y": 771 },
+                "filename": "PauseMenu\\descriptor-01",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "C_image_02",
+            "fields": {
+                "rect": { "x": 22, "y": 1027 },
+                "filename": "PauseMenu\\descriptor-02",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "C_image_03",
+            "fields": {
+                "rect": { "x": 22, "y": 1283 },
+                "filename": "PauseMenu\\descriptor-03",
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Crogo",
+            "fields": {
+                "rect": { "x": 22, "y": 58 },
+                "filename": "splashscreen\\CrogoP",
+            }
+        },
+                {
+                    "type": "TextBoxWidget", "name": "ver",
+                    "fields": {
+                        "rect": { "x": 247, "y": 203, "scale": 0.82 },
+                        "text": "@StrHDHelpHostileStatus",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorRed",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "right", "h": "center" }
+                        }
+                    }
+                },
+    ]
+}

@@ -1,0 +1,330 @@
+{
+    "type": "HelpPanel", "name": "HelpPanel",
+    "fields": {
+        "priority": 300,
+        "fitToParent": true,
+        "childFormats": [
+
+			
+        ],
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "TransparentBG",
+            "fields": {
+                "fitToScreen": true,
+                "color": [ 0.0, 0.0, 0.0, 0.0 ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "catcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                },  
+            ]
+        },
+        {
+            "type": "Widget", "name": "CenterSection",
+            "fields": {
+                "anchor": { "x": 0.0, "y": 0.0 },
+                "rect": { "x": 0, "y": 0 },
+            },
+            "children": [
+
+                // Text
+
+				{
+                    "type": "ImageWidget", "name": "helptool",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "scale":1.0},
+                        "filename": "PANEL/helpMaster",
+                    }
+                },
+
+
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 629, "y": 325 }, "tooltipString": "@helpRunewordAncientsPledge", "filename": "PANEL/btn_socket_03", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 629, "y": 371 }, "tooltipString": "@helpRunewordSpiritShield", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 629, "y": 417 }, "tooltipString": "@helpRunewordRhyme", "filename": "PANEL/btn_socket_02", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 629, "y": 463 }, "tooltipString": "@helpRunewordSanctuaty", "filename": "PANEL/btn_socket_03", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 629, "y": 509 }, "tooltipString": "@helpRunewordExile", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 629, "y": 555 }, "tooltipString": "@helpRunewordPhoenixShield", "filename": "PANEL/btn_socket_04", } },
+				
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 629, "y": 739 }, "tooltipString": "@helpRunewordLore", "filename": "PANEL/btn_socket_02", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 629, "y": 785 }, "tooltipString": "@helpRunewordDreamHelm", "filename": "PANEL/btn_socket_03", } },
+
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 325 }, "tooltipString": "@helpRunewordEdge", "filename": "PANEL/btn_socket_03", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 371 }, "tooltipString": "@helpRunewordHarmony", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 417 }, "tooltipString": "@helpRunewordFaith", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 463 }, "tooltipString": "@helpRunewordLeaf", "filename": "PANEL/btn_socket_02", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 509 }, "tooltipString": "@helpRunewordWhite", "filename": "PANEL/btn_socket_02", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 555 }, "tooltipString": "@helpRunewordHeartoftheOak", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 601 }, "tooltipString": "@helpRunewordInsight", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 647 }, "tooltipString": "@helpRunewordObedience", "filename": "PANEL/btn_socket_05", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 693 }, "tooltipString": "@helpRunewordInfinity", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 739 }, "tooltipString": "@helpRunewordDestruction", "filename": "PANEL/btn_socket_05", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 785 }, "tooltipString": "@helpRunewordPride", "filename": "PANEL/btn_socket_04", } },
+
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 940 }, "tooltipString": "@helpRunewordSteel", "filename": "PANEL/btn_socket_02", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 986 }, "tooltipString": "@helpRunewordSplitSword", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1032 }, "tooltipString": "@helpRunewordCrescentMoon", "filename": "PANEL/btn_socket_03", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1078 }, "tooltipString": "@helpRunewordOath", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1124 }, "tooltipString": "@helpRunewordKingslayer", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1170 }, "tooltipString": "@helpRunewordDeath", "filename": "PANEL/btn_socket_05", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1216 }, "tooltipString": "@helpRunewordCalltoArms", "filename": "PANEL/btn_socket_05", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1262 }, "tooltipString": "@helpRunewordGrief", "filename": "PANEL/btn_socket_05", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1308 }, "tooltipString": "@helpRunewordLastWish", "filename": "PANEL/btn_socket_06", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1354 }, "tooltipString": "@helpRunewordDoom", "filename": "PANEL/btn_socket_05", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 1860, "y": 1400 }, "tooltipString": "@helpRunewordBreathoftheDying", "filename": "PANEL/btn_socket_06", } },
+
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 325 }, "tooltipString": "@helpRunewordStealth", "filename": "PANEL/btn_socket_02", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 371 }, "tooltipString": "@helpRunewordSmoke", "filename": "PANEL/btn_socket_02", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 417 }, "tooltipString": "@helpRunewordTreachery", "filename": "PANEL/btn_socket_03", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 463 }, "tooltipString": "@helpRunewordDuress", "filename": "PANEL/btn_socket_03", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 509 }, "tooltipString": "@helpRunewordStone", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 555 }, "tooltipString": "@helpRunewordGloom", "filename": "PANEL/btn_socket_03", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 601 }, "tooltipString": "@helpRunewordPrudence", "filename": "PANEL/btn_socket_02", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 647 }, "tooltipString": "@helpRunewordFortitude", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 693 }, "tooltipString": "@helpRunewordChainsofHonor", "filename": "PANEL/btn_socket_04", } },
+				{ "type": "ButtonWidget", "fields": { "rect": { "x": 3091, "y": 739 }, "tooltipString": "@helpRunewordEnigma", "filename": "PANEL/btn_socket_03", } },
+
+
+
+				{
+					"type": "ButtonWidget", "name": "hudStr2", //1번 주얼
+					"fields": {
+						"rect": { "x": 1250, "y": 1825 },
+						"tooltipString": "@hudpanelStr10",
+						"filename": "PANEL/1_Jw",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr10", //2번 부적
+					"fields": {
+						"rect": { "x": 1403, "y": 1825 },
+						"tooltipString": "@hudpanelStr3",
+						"filename": "PANEL/2_Cm",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr2", //3번 매직아이템
+					"fields": {
+						"rect": { "x": 1556, "y": 1825 },
+						"tooltipString": "@hudpanelStr2",
+						"filename": "PANEL/3_Mitem",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr4", //4번 매직아이템2 레어아이템
+					"fields": {
+						"rect": { "x": 1709, "y": 1825 },
+						"tooltipString": "@hudpanelStr4",
+						"filename": "PANEL/4_Mitem2",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr6", //5번 레어목걸이
+					"fields": {
+						"rect": { "x": 1862, "y": 1825 },
+						"tooltipString": "@hudpanelStr6",
+						"filename": "PANEL/5_Ram",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr6", //6번 레어링
+					"fields": {
+						"rect": { "x": 2015, "y": 1825 },
+						"tooltipString": "@hudpanelStr5",
+						"filename": "PANEL/6_Rring",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr8", //7번 룬워드무기
+					"fields": {
+						"rect": { "x": 2168, "y": 1825 },
+						"tooltipString": "@hudpanelStr8",
+						"filename": "PANEL/7_Rw",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr8", //8번 룬워드방어구
+					"fields": {
+						"rect": { "x": 2321, "y": 1825 },
+						"tooltipString": "@hudpanelStr7",
+						"filename": "PANEL/8_Ra",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr9", //9번 크랲
+					"fields": {
+						"rect": { "x": 2474, "y": 1825 },
+						"tooltipString": "@hudpanelStr9",
+						"filename": "PANEL/9_Cr",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr10", //10유니크무기1
+					"fields": {
+						"rect": { "x": 1337, "y": 1700 },
+						"tooltipString": "@hudStr10",
+						"filename": "PANEL/10_Uw1",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudpanelStr11", //11유니크무기2
+					"fields": {
+						"rect": { "x": 1547, "y": 1700 },
+						"tooltipString": "@hudpanelStr11",
+						"filename": "PANEL/11_Uw2",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudpanelStr12", //12유니크방어구
+					"fields": {
+						"rect": { "x": 1757, "y": 1700 },
+						"tooltipString": "@hudpanelStr12",
+						"filename": "PANEL/12_Ua",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudpanelStr13", //13유니크방어구2
+					"fields": {
+						"rect": { "x": 1967, "y": 1700 },
+						"tooltipString": "@hudpanelStr13",
+						"filename": "PANEL/15_Uaa",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr14", //14유니크악세
+					"fields": {
+						"rect": { "x": 2177, "y": 1700 },
+						"tooltipString": "@hudStr14",
+						"filename": "PANEL/13_Uac",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudStr15", //15세트장비
+					"fields": {
+						"rect": { "x": 2387, "y": 1700 },
+						"tooltipString": "@hudStr15",
+						"filename": "PANEL/14_Set",
+					}
+				},
+                // Indicator lines
+
+				{
+					"type": "ButtonWidget", "name": "hudpal", 
+					"fields": {
+						"rect": { "x": 1320, "y": 1560 },
+						"tooltipString": "@hudhelpCharaPal",
+						"filename": "PANEL/btn-chara-pal",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudama", 
+					"fields": {
+						"rect": { "x": 1474, "y": 1560 },
+						"tooltipString": "@hudhelpCharaAma",
+						"filename": "PANEL/btn-chara-ama",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudbaba", 
+					"fields": {
+						"rect": { "x": 1628, "y": 1560 },
+						"tooltipString": "@hudhelpCharaBaba",
+						"filename": "PANEL/btn-chara-baba",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudsoso", //soso
+					"fields": {
+						"rect": { "x": 1782, "y": 1560 },
+						"tooltipString": "@hudhelpCharaSorc",
+						"filename": "PANEL/btn-chara-sor",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudnec", 
+					"fields": {
+						"rect": { "x": 1936, "y": 1560 },
+						"tooltipString": "@hudhelpCharaNec",
+						"filename": "PANEL/btn-chara-nec",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "hudassa", 
+					"fields": {
+						"rect": { "x": 2090, "y": 1560 },
+						"tooltipString": "@hudhelpCharaAssa",
+						"filename": "PANEL/btn-chara-assa",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "huddru", 
+					"fields": {
+						"rect": { "x": 2244, "y": 1560 },
+						"tooltipString": "@hudhelpCharaDru",
+						"filename": "PANEL/btn-chara-dru",
+					}
+				},
+				{
+					"type": "ButtonWidget", "name": "huddru2", 
+					"fields": {
+						"rect": { "x": 2398, "y": 1560 },
+						"tooltipString": "@hudhelpCharaDru2",
+						"filename": "PANEL/btn-chara-dru2",
+					}
+				},
+
+            ]
+        },
+        // Right Anchored Panel
+        {
+            "type": "Widget", "name": "RightSection",
+            "fields": {
+                "anchor": { "x": 1.0, "y": 1.0 },
+                "rect": { "x": -230, "y": -2000 },
+            },
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "rect": { "x": 95, "y": -100 },
+                        "tooltipString": "@strClose",
+                        "sound": "cursor_close_window_hd",
+                        "onClickMessage": "PanelManager:ClosePanel:HelpPanel",
+                        "filename": "PANEL/closebtn_4x",
+                    }
+                },
+                // Warnings
+                {
+                    "type": "TextBoxWidget", "name": "HostileLabel",
+                    "fields": {
+                        "rect": { "x": -80, "y": 10 },
+                        "text": "@StrHDHelpHostileStatus",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorRed",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "left", "h": "center" }
+                        }
+                    }
+                },
+
+            ]
+        },
+        // Left Anchored Panel
+        {
+            "type": "Widget", "name": "LeftSection",
+            "fields": {
+                "anchor": { "x": 0, "y": 0 },
+                "rect": { "x": 250, "y": 250 },
+            },
+            "children": [
+                // Ally Display
+ 
+            ]
+        },
+    ]
+}

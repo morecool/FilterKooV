@@ -1,0 +1,292 @@
+{
+    "basedOn": "PlayerInventoryOriginalLayoutHD.json",
+    "type": "PlayerInventoryPanel", "name": "PlayerInventoryExpansionLayout",
+    "fields": {
+        "activeWeaponSwapFontColor": "$TabsActiveTextColorInGame",
+        "inactiveWeaponSwapFontColor": "$TabsInactiveTextColor",
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "click_catcher",
+        },
+        {
+            "type": "ImageWidget", "name": "background",
+            "fields": {
+                "filename": "PANEL\\Inventory\\Background"
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "tbg1",
+            "fields": {
+                "rect": { "x": 1216, "y": 0 },
+                "filename": "PANEL\\tbg1"
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "RightHinge",
+        },
+        {
+            "type": "TextBoxWidget", "name": "title",
+        },
+        {
+            "type": "TextBoxWidget", "name": "gold_amount",
+            "children": [
+                {
+                    "type": "FocusableWidget", "name": "gold_amount_tooltip",
+                }
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "gold_button",
+        },
+        {
+            "type": "ButtonWidget", "name": "close",
+        },
+        {
+            "type": "InventoryGridWidget", "name": "grid",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_right_hand",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_left_hand",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_belt",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_feet",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_gloves",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_head",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_neck",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_torso",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_right_arm",
+        },
+        {
+            "type": "InventorySlotWidget", "name": "slot_left_arm",
+        },
+        {
+            "type": "ImageWidget", "name": "background_right_arm_selected",
+            "fields": {
+                "rect": { "x": 99, "y": 179 },
+                "filename": "PANEL\\Inventory\\Tab",
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "background_left_arm_selected",
+            "fields": {
+                "rect": { "x": 850, "y": 179 },
+                "filename": "PANEL\\Inventory\\Tab",
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "background_right_arm",
+            "fields": {
+                "rect": { "x": 99, "y": 179 },
+                "filename": "PANEL\\Inventory\\Tab",
+                "frame": 1,
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "background_left_arm",
+            "fields": {
+                "rect": { "x": 850, "y": 179 },
+                "filename": "PANEL\\Inventory\\Tab",
+                "frame": 1,
+            },
+        },
+        /*
+        {
+            "type": "TabBarWidget", "name": "Tabs",
+            "fields": {
+                "rect": { "x": 99, "y": 179 },
+                "tabCount": 2,
+                "inactiveFrames": [ 1, 1 ],
+                "activeFrames": [ 0, 0 ],
+                "textStrings": [ "I", "II" ],
+                "textStyle": { "pointSize": "$MediumLargeFontSize" },
+                "activeTextColor": "$TabsActiveTextColor",
+                "inactiveTextColor": "$TabsInactiveTextColor",
+                "tabSize": { "x": 107, "y": 60 },
+                "tabPadding": { "x": 0, "y": 0 },
+                "onSwitchTabMessage": "PlayerInventoryPanelMessage:SelectTab",
+            }
+        },
+        */
+
+        {
+            "type": "TextBoxWidget", "name": "text_i_left",
+            "fields": {
+                "rect": { "x": 99, "y": 180, "width": 107, "height": 48 },
+                "text": "I",
+                "style": "$StyleWeaponSwapTabs",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "text_ii_left",
+            "fields": {
+                "rect": { "x": 205, "y": 180, "width": 107, "height": 48 },
+                "text": "II",
+                "style": "$StyleWeaponSwapTabs",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "text_i_right",
+            "fields": {
+                "rect": { "x": 850, "y": 180, "width": 107, "height": 48 },
+                "text": "I",
+                "style": "$StyleWeaponSwapTabs",
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "text_ii_right",
+            "fields": {
+                "rect": { "x": 956, "y": 180, "width": 107, "height": 48 },
+                "text": "II",
+                "style": "$StyleWeaponSwapTabs",
+            },
+        },
+        {
+            "type": "FocusableWidget", "name": "weaponswap_right_arm",
+            "fields": {
+                "rect": { "x": 99, "y": 179, "width": 215, "height": 48 },
+            },
+        },
+        {
+            "type": "FocusableWidget", "name": "weaponswap_left_arm",
+            "fields": {
+                "rect": { "x": 850, "y": 179, "width": 215, "height": 48 },
+            },
+        },
+		{
+			"type": "ButtonWidget", "name": "hudStr2", //1번 주얼
+			"fields": {
+				"rect": { "x": 1218, "y": 57, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr10",
+				"filename": "PANEL/1_Jw",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr10", //2번 부적
+			"fields": {
+				"rect": { "x": 1218, "y": 176, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr3",
+				"filename": "PANEL/2_Cm",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr3", //3번 매직아이템
+			"fields": {
+				"rect": { "x": 1218, "y": 295, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr2",
+				"filename": "PANEL/3_Mitem",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr4", //4번 매직아이템2 레어아이템
+			"fields": {
+				"rect": { "x": 1218, "y": 414, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr4",
+				"filename": "PANEL/4_Mitem2",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr6", //5번 레어목걸이
+			"fields": {
+				"rect": { "x": 1218, "y": 533, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr6",
+				"filename": "PANEL/5_Ram",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr5", //6번 무기
+			"fields": {
+				"rect": { "x": 1218, "y": 652, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr5",
+				"filename": "PANEL/6_Rring",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr8", //7번 룬워드무기
+			"fields": {
+				"rect": { "x": 1218, "y": 771, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr8",
+				"filename": "PANEL/7_Rw",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr8", //8번 룬워드방어구
+			"fields": {
+				"rect": { "x": 1218, "y": 890, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr7",
+				"filename": "PANEL/8_Ra",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr9", //9번 크랲
+			"fields": {
+				"rect": { "x": 1217, "y": 1009, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr9",
+				"filename": "PANEL/9_Cr",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr10", //10유니크무기1
+			"fields": {
+				"rect": { "x": 1218, "y": 1128, "scale": 0.8 },
+				"tooltipString": "@hudStr10",
+				"filename": "PANEL/10_Uw1",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudpanelStr11", //11유니크무기2
+			"fields": {
+				"rect": { "x": 1218, "y": 1247, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr11",
+				"filename": "PANEL/11_Uw2",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudpanelStr12", //12유니크방어구
+			"fields": {
+				"rect": { "x": 1218, "y": 1366, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr12",
+				"filename": "PANEL/12_Ua",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudpanelStr13", //13유니크방어구2
+			"fields": {
+				"rect": { "x": 1218, "y": 1485, "scale": 0.8 },
+				"tooltipString": "@hudpanelStr13",
+				"filename": "PANEL/15_Uaa",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr14", //14유니크악세
+			"fields": {
+				"rect": { "x": 1218, "y": 1604, "scale": 0.8 },
+				"tooltipString": "@hudStr14",
+				"filename": "PANEL/13_Uac",
+			}
+		},
+		{
+			"type": "ButtonWidget", "name": "hudStr15", //15세트장비
+			"fields": {
+				"rect": { "x": 1218, "y": 1723, "scale": 0.8 },
+				"tooltipString": "@hudStr15",
+				"filename": "PANEL/14_Set",
+			}
+		},
+    ]
+}
