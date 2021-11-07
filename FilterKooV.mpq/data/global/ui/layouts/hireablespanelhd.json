@@ -6,7 +6,7 @@
         "nextIconOffset": { "y": 204 },
         "summonsUseSecondSet": true,
         "nameAlternationSecondSetY": 0,
-        "secondSetPosition": { "x": 3600, "y": 1250 },
+        "secondSetPosition": { "x": 1600, "y": 1500 },
         "nextIconOffsetSecondSet": "$SecondSetIconOffset",
         "tooltipOffset": { "x": 160, "y": 115 },
         "baseTransparency": 0.65,

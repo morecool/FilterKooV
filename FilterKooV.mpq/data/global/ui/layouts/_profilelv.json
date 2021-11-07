@@ -38,7 +38,7 @@
     "TooltipStyle": {
         "fontStyle": {
             "fontColor": "$FontColorWhite",
-            "pointSize": 32,
+            "pointSize": "$TooltipFontSize",
             "alignment": { "h": "center", "v": "center" },
             "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "reversed" }
         },
